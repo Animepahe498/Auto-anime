@@ -15,8 +15,8 @@ basicConfig(format="[%(asctime)s] [%(name)s | %(levelname)s] - %(message)s [%(fi
 
 load_dotenv('config.env', override=True)
 
-UPSTREAM_REPO = getenv('UPSTREAM_REPO')
-UPSTREAM_BRANCH = getenv('UPSTREAM_BRANCH')
+UPSTREAM_REPO = getenv('https://github.com/Animepahe498/Auto-anime')
+UPSTREAM_BRANCH = getenv('main')
 
 if UPSTREAM_REPO is not None:
     if opath.exists('.git'):
